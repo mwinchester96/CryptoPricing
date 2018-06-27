@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -14,19 +13,15 @@
 
 <body>
   <h1>GDAX Feed</h1>
-	<table style="width:100%">
+  Product-ID<input type="text" id="product-id-input">
+  <button id='submit-product-id'>Subscribe</button>
+  
+	<table id="feed-table" style="width:100%">
   		<tr>
-    		<th>Coin</th>
-    		<th>Currency</th>
-    		<th>Bid</th>
-    		<th>Ask</th>
+    		<th>Product-ID</th>
+    		<th>Buy</th>
+    		<th>Sell</th>
   		</tr>
-		<tr>
-			<td id='coin'></td>
-			<td id='currency'></td>
-			<td id='currBid'></td>
-			<td id='currAsk'></td>
-		</tr>
 	</table> 
 	<script src="js/feed.js"></script>
 </body>
