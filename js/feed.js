@@ -1,10 +1,10 @@
 // Set up vars
-let ws = new WebSocket('wss://ws-feed.gdax.com');
-let feedTable = document.getElementById('feed-table')
+let ws = new WebSocket('wss://ws-feed.prime.coinbase.com');
+let feedTable = document.getElementById('feed-table');
 let allProductIds = [];
 
-let productIdInputBox = document.getElementById('product-id-input')
-let productIdSubscribeButton = document.getElementById('submit-product-id')
+let productIdInputBox = document.getElementById('product-id-input');
+let productIdSubscribeButton = document.getElementById('submit-product-id');
 
 productIdSubscribeButton.onclick = function(){
   subscribeToNewProduct(productIdInputBox.value)

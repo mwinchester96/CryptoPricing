@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Historical Data</title>
+  <style>
+  	table, th, td {
+    border: 1px solid black;
+ 	}
+  </style>
+</head>
+
+<body>
+  <h1>Historical Data</h1>
+  <a href="feed.html">Feed</a>
+  <br>
+  <hr>
+
+  <label for="start-date-input">Start Date: </label>
+  <input type="date" id="start-date-input">
+
+  <label for="end-date-input">End Date: </label>
+  <input type="date" id="end-date-input">
+
+  <label for="granularity-input">Granularity: </label>
+  <select id="granularity-input">
+    <option>60</option>
+    <option>300</option>
+    <option>900</option>
+    <option>3600</option>
+    <option>21600</option>
+    <option>86400</option>
+  </select> 
+  <label for="product-id-input">Product ID: </label>
+  <input type="text" id="product-id-input">
+  <button id="submit-request-button">Submit</button>
+
+	<script src="js/historicalData.js"></script>
+</body>
+</html>
